@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.headSection {
+  margin: 30px;
+  text-align: center;
+}
+
+.headSection h1 {
+  color: orangered;
+  margin: 10px;
+  text-decoration: underline;
+  text-shadow: 1px 1px #ccc;
+}
+
+.headSection p {
+  font-size: 1.1rem;
+  margin: 8px;
+}
+
+/* Form Layout */
+
+.form-Container h2,
+.form-data-container h2 {
+  text-align: center;
+  margin-top: 15px;
+  color: blue;
+}
+
+#studentForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 25px;
+}
+
+#studentForm input,
+#studentForm button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* Both Section Handle Here */
+.containerForm-and-Data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.form-Container,
+.form-data-container {
+  flex: 1;
+  min-width: 300px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px gray;
+  padding: 20px;
+  background: #fff;
+}
+
+.form-Container{
+    max-width: 600px;
+    max-height: 400px;
+}
+
+
+/* Table Css */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.add-btn {
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.update-btn {
+  background: orange;
+  display: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.btn-Delete {
+  background: red;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+.btn-Edit {
+  background: blue;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button{
+    opacity: 0.8;
+}
+
+.form-data-container {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* Code responsiveness */
+@media (max-width: 768px) {
+  .containerForm-and-Data {
+    flex-direction: column;
+  }
+}

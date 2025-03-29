@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Record Management System and Fill Student Registration System">
+    <meta name="keywords" content="Student Form , Collage Student Data, Form Detain, Fill Form">
+    <meta name="author" content="S V Developer">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <header class="headSection">
+        <h1>Student Registration System</h1>
+        <p>Register students and manage their records easily.</p>
+    </header>
+
+    <!-- Iside Container Fill and Fetch Data -- Section Vise -->
+    <div class="containerForm-and-Data">
+
+        <section class="form-Container">
+            <h2>Student Register</h2>
+            <form action="" id="studentForm">
+                <input type="text" id="sname" placeholder="Enter student name..." pattern="^[A-Za-z]+(?: [A-Za-z]+)*$" 
+                title="Only letters and spaces allowed" required>
+                <input type="email" id="sEmail" placeholder="Student email"
+                    pattern="^[a-zA-Z][a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                <input type="tel" id="sNumber" placeholder="Student number" pattern="^(?:\+91|0)?[6-9][0-9]{9}$" title="Only Phone Number allow"
+                    maxlength="13"  required>
+                <button type="submit" class="add-btn">Add Student</button>
+                <button type="submit" class="update-btn">Update Student</button>
+            </form>
+        </section>
+
+        <section class="form-data-container">
+            <h2>Register Student List</h2>
+            <table>
+                <thead class="head-Form-Data"> 
+                    <tr>
+                        <th>Student Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact No.</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList">
+                    <!-- Student Add dynamically after student submit data-->
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
